@@ -1,10 +1,17 @@
-
+import "./App.css"
+import NavBar from "./components/NavBar/NavBar"
 
 function App() {
 
   return (
     <>
-    <h1>GPT-3</h1>
+    <div className="app">
+      <div className="gradient__bg">
+      <NavBar/>
+      </div>
+    </div>
+
+    
     </>
   )
 }

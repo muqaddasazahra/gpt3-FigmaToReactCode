@@ -1,0 +1,63 @@
+.navbar
+{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+    font-family: var(--font-family);
+}
+.nav
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo
+{
+    margin-right: 2rem;
+}
+.logo img
+{
+    width: 62.56px;
+    height: 16.02px;
+}
+.navlinks
+{
+ display: flex;
+
+}
+
+.navlinks p,
+#signIn
+{  
+   color: white;
+   font-size: 18px;
+   font-weight: 500;
+   line-height: 25px;
+   text-transform: capitalize;
+   margin:0 1rem;
+   font-family: var(--font-family);
+}
+#signIn
+{
+    background-color: transparent;
+    border: none;
+    font-family: var(--font-family);
+    color: white;
+}
+.navbuttons button
+{
+    padding:0.5rem 1rem;
+    border:none;
+    font-weight: 500;
+    font-size: 18px;
+    color:white;
+    font-family: var(--font-family);
+    background-color: #FF4820;
+    line-height: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
