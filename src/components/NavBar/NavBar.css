@@ -7,7 +7,8 @@
     font-family: var(--font-family);
 }
 .nav
-{
+{   
+    flex:1;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -24,10 +25,12 @@
 .navlinks
 {
  display: flex;
+ 
 
 }
 
 .navlinks p,
+.navmenulinks,
 #signIn
 {  
    color: white;
@@ -45,7 +48,8 @@
     font-family: var(--font-family);
     color: white;
 }
-.navbuttons button
+.navbuttons button,
+.navmenubuttons button
 {
     padding:0.5rem 1rem;
     border:none;
@@ -58,6 +62,84 @@
     border-radius: 5px;
     cursor: pointer;
 }
+.navbarmenu
+{
+
+    position: relative;
+    margin: 1rem;
+    display: none;
+
+}
+.navbarmenu svg
+{
+    cursor:pointer
+}
+
+.navmenu
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+  position: absolute;
+  right:0;
+  top:40px;
+  background: var(--color-footer);
+  padding: 2rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  min-width:210px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+  text-align: end;
+
+}
+.navmenu p
+{
+    margin: 1rem 0;
+}
+.navmenubuttons
+{
+    display: none;
+}
+
+@media screen and (max-width:1050px) {
+    .navlinks{
+        display: none;
+    }
+    .navbarmenu
+    {
+        display: flex;
+    }
+}
+@media screen and (max-width:700px) {
+    .navbar
+    {
+        padding: 2rem 4rem;
+    }
+   
+    
+}
+@media screen and (max-width:550px){
+    .navbar
+    {
+        padding: 2rem;
+    }
+    .navbuttons
+    {
+        display: none;
+    }
+    .navmenu
+    {
+        top:20px;
+    }
+    .navmenubuttons
+    {
+        display:block
+    }
+}
+
+
 
 
 
